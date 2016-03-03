@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/we"
+    tools:context=".SecondActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Find equivalent race times"
+        android:id="@+id/textView3"
+        android:textColor="#ff28deff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_row="6"
+        android:layout_column="0" />
+
+    <Spinner
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:layout_weight="1.28" />
+
+    <LinearLayout
+        android:layout_width="316dp"
+        android:layout_height="110dp"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:weightSum="1"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/raceTime"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/VO2Max"
+            android:layout_alignStart="@+id/VO2Max"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:layout_weight="0.59" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="195dp"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Time"
+            android:id="@+id/userEnteredTime"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pace"
+            android:id="@+id/pacePerMile"
+            android:layout_alignBaseline="@+id/VO2Max"
+            android:layout_alignBottom="@+id/VO2Max"
+            android:layout_alignLeft="@+id/VO2Max"
+            android:layout_alignStart="@+id/VO2Max"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:layout_width="86dp"
+            android:layout_height="45dp"
+            android:id="@+id/paceOption"
+            android:layout_gravity="right"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="VO2Max"
+            android:id="@+id/VO2Max"
+            android:layout_alignBottom="@+id/raceTime"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_row="10"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.19" />
+
+    </LinearLayout>
+
+</GridLayout>
